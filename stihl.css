@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --outline: 1px dotted red;
+
+}
+body{
+    position: relative;
+    height: 100vh;
+    background: rgb(79, 206, 185);
+}
+header,
+footer {
+    position: absolute;
+    height: 50px;
+    background: rgb(0, 0, 0);
+    color: #fff;
+
+    width: 100%;
+}
+footer {
+    border-top: 5px solid rgb(255, 255, 255);
+    text-align: right;
+    bottom: 0px;
+    height: 40px;
+    font-size: 140%;
+}
+header {
+    border-bottom: 5px solid rgb(255, 255, 255);
+    text-align: center;
+    font-size: 150%;
+}
+.main {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: calc(100vh - 50px - 40px);
+    padding: 1rem;
+}
+.footer {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+}
+article {
+    background: rgba(255, 255, 255, 0.562);
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    transition: 1s ease-in-out;
+}
+article:hover{
+    padding: 2.5rem;
+    font-size: 120%;
+}
+
