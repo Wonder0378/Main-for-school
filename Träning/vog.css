@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 5px;
+}
+body {
+    position: relative;
+    width: calc(100%-20px);
+    height: 100vh;
+}
+div{
+    display: flex;
+    flex-direction: row;
+    background: rgba(128, 128, 128, 0.5);
+    margin: 5px;
+    padding: 5px;
+    height: 150px;
+}
+nav {
+    width: calc(100%-20px);
+    background: rgb(179, 69, 69);
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 100px;
+    border-radius: 5px;
+
+}
+nav a:hover{
+    color: rgb(255, 255, 255);
+    background: rgba(63, 10, 10, 0.418);
+}
