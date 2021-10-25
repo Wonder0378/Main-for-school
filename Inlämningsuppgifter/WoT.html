@@ -3,7 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="WoT.css">
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --outline: 1px dotted rgb(231, 94, 94) ;
+}
+body {
+    position: relative;
+    background-image: linear-gradient(to bottom right, 
+    rgb(228, 228, 228), 
+    rgb(182, 181, 181));
+}
+header, footer {
+    text-align: center;
+    height: 50px;
+    font-size: 150%;
+    padding: 10px;
+}
+header {
+    margin-bottom: 30px;
+}
+div {
+    margin: 10px;
+}
+.main {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+article {
+    padding: 10px;
+    border-radius: 20px;
+    animation: ease-in-out 4s 
+    
+}
+ul {
+    padding-left: 20px;
+}
+h2, header {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.v1{
+    position: absolute;
+    background-image: linear-gradient(to bottom right, 
+    rgba(252, 0, 0, 0.6), 
+    rgba(194, 89, 3, 0.6));
+    padding-left: 0px;
+    width: 150px;
+    top: 0px;
+    bottom: 0px;
+    margin: 0;
+    border-right: 10px solid black
+}
+.v2{
+    position: absolute;
+    background-image: linear-gradient(to bottom right, 
+    rgba(252, 0, 0, 0.6), 
+    rgba(194, 89, 3, 0.6));
+    right: 0px;
+    width: 150px;
+    top: 0px;
+    bottom: 0px;
+    margin: 0;
+    border-left: 10px solid black
+}
+a {
+    text-decoration: none;
+    color:rgba(150, 10, 10, 0.74);
+}
+a:hover{
+    color:rgb(231, 94, 94);
+}
+article:hover{
+    background: rgba(255, 255, 255, 0.39);
+}
+
+    </style>
 </head>
 <header><h1>Top ten mistakes of web design</h1></header>
 <body>
@@ -21,7 +99,7 @@
                 <article>
                     <h2>1. Bad Search</h2>
                 Overly literal search engines reduce usability in that they're unable to handle typos, plurals, hyphens, and other variants of the query terms. Such search engines
-                are <a style="color:brown;" href=https://www.nngroup.com/articles/usability-for-senior-citizens/">particularly difficult for elderly users</a>, but they hurt everybody. <br> <br>
+                are <a href=https://www.nngroup.com/articles/usability-for-senior-citizens/">particularly difficult for elderly users</a>, but they hurt everybody. <br> <br>
                 A related problem is when search engines prioritize results purely on the basis
                 of how many query terms they contain, rather than on each document's
                 importance. Much better if your search engine calls out &quot;best bets&quot;
@@ -29,8 +107,7 @@
                 your products. 
                 <br> <br> 
                 Search is the user's lifeline when navigation fails. Even though advanced search can
-                sometimes help, <a style="color:brown;"
-                href="https://www.nngroup.com/articles/search-visible-and-simple/">simple search usually works best</a>, and search should be presented as a
+                sometimes help, <a href="https://www.nngroup.com/articles/search-visible-and-simple/">simple search usually works best</a>, and search should be presented as a
                 simple box, since that's what users are looking for.
                 </article>
                 </div>
@@ -48,7 +125,7 @@
                 need to be printed. Reserve it for this purpose and convert any information
                 that needs to be browsed or read on the screen into real web pages. 
                 <br> <br>
-                &#9755;Detailed discussion of why <a style="color:brown;"href="https://www.nngroup.com/articles/pdf-unfit-for-human-consumption/">PDF is bad for online reading</a>
+                &#9755;Detailed discussion of why <a href="https://www.nngroup.com/articles/pdf-unfit-for-human-consumption/">PDF is bad for online reading</a>
                 </article>
             </div>
             
@@ -71,8 +148,8 @@
                 navigational disorientation in usability testing and unintentionally revisit
                 the same pages repeatedly.
                 <br> <br>
-                &#9755;<a style="color:brown;"href="https://www.nngroup.com/articles/change-the-color-of-visited-links/">Usability implications of changing link colors </a> <br>
-                &#9755;<a style="color:brown;"href="http://www.nngroup.com/articles/guidelines-for-visualizing-links/">Guidelines for showing links</a>
+                &#9755;<a href="https://www.nngroup.com/articles/change-the-color-of-visited-links/">Usability implications of changing link colors </a> <br>
+                &#9755;<a href="http://www.nngroup.com/articles/guidelines-for-visualizing-links/">Guidelines for showing links</a>
                 </article>
             </div>
             
@@ -83,7 +160,7 @@
                 A wall of text is deadly for an interactive experience. Intimidating. Boring.
                 Painful to read. 
                 <br> <br> 
-                <a style="color:brown;"href="https://www.nngroup.com/topic/writing-web/">Write for online</a>, 
+                <a href="https://www.nngroup.com/topic/writing-web/">Write for online</a>, 
                 not print. To draw users into the text and support scannability, use well-documented tricks: 
                 <br> <br> 
                 <ul>
@@ -95,7 +172,7 @@
                     <li>a simple writing style, and</li>
                     <li>de-fluffed language devoid of marketese.</li>
                 </ul>
-                &#9755;<a style="color:brown;" href="http://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/">Eyetracking of reading patterns</a>
+                &#9755;<a href="http://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/">Eyetracking of reading patterns</a>
                 
                 </article>
             </div>
@@ -109,7 +186,7 @@
                 significantly for most people over the age of 40. 
                 <br> <br> 
                 Respect the user's preferences and let them 
-                <a style="color:brown;" href="https://www.nngroup.com/articles/let-users-control-font-size/">resize text</a> as needed. Also, specify font sizes in relative terms — not as an absolute number of pixels.
+                <a href="https://www.nngroup.com/articles/let-users-control-font-size/">resize text</a> as needed. Also, specify font sizes in relative terms — not as an absolute number of pixels.
                 
                 </article>
             </div>
@@ -125,7 +202,7 @@
                 The page title is contained within the HTML &lt;title&gt; tag and is almost always
                 used as the clickable headline for listings on search engine result pages
                 (SERP). Search engines typically show the first 66 characters or so of the
-                title, so it's truly <a style="color:brown;" href="https://www.nngroup.com/articles/microcontent-how-to-write-headlines-page-titles-and-subject-lines/">microcontent</a> 
+                title, so it's truly <a href="https://www.nngroup.com/articles/microcontent-how-to-write-headlines-page-titles-and-subject-lines/">microcontent</a> 
                 <br> <br>
                 Pagetitles are also used as the default entry in the Favorites when users bookmark
                 a site. For your homepage, begin with the company name, followed by a brief
@@ -142,7 +219,7 @@
                 titles start with the same words, you have severely reduced usability for your
                 multi-windowing users. 
                 <br> <br>
-                <a style="color:brown;" href="https://www.nngroup.com/articles/tagline-blues-whats-the-site-about/">Taglines on homepages</a> are a related subject: they
+                <a href="https://www.nngroup.com/articles/tagline-blues-whats-the-site-about/">Taglines on homepages</a> are a related subject: they
                 also need to be short and quickly communicate the purpose of the site.
                 </article>
             </div>
@@ -153,11 +230,11 @@
 
                 Selective attention is very powerful, and Web users have learned to stop paying attention to
                 any ads that get in the way of their goal-driven navigation. (The main
-                exception being <a style="color:brown;" href="https://www.nngroup.com/articles/will-plain-text-ads-continue-to-rule/">
+                exception being <a href="https://www.nngroup.com/articles/will-plain-text-ads-continue-to-rule/">
                 text-only search-engine ads.)</a> 
                 <br> <br>
                 Unfortunately, users also
-                 <a style="color:brown;" href="https://www.nngroup.com/articles/fancy-formatting-looks-like-an-ad/">
+                 <a href="https://www.nngroup.com/articles/fancy-formatting-looks-like-an-ad/">
                 ignore legitimate design elements that look like</a> prevalent forms of advertising. After all, 
                 when you <i>ignore </i>something, you don't study it in detail to find out what it is.
                 <br> <br>
@@ -165,7 +242,7 @@
                 will vary with new forms of ads; currently follow these rules:
                  <br> <br>
                 <ul>
-                    <li><a style="color:brown;" href="https://www.nngroup.com/articles/banner-blindness-old-and-new-findings/"><strong>banner 
+                    <li><a href="https://www.nngroup.com/articles/banner-blindness-old-and-new-findings/"><strong>banner 
                         blindness</strong></a> means that users never fixate their eyes on anything that looks like a banner ad due to 
                         shape or position on the page</li>
                     <li><strong>animation avoidance</strong>  makes users ignore areas with blinking or flashing text or other
@@ -240,17 +317,17 @@
                 marketese and bland slogans. Since users don't have time to read everything,
                 such hidden info might almost as well not be there. <br> <br> The
                 worst example of not answering users' questions is to <a
-                style="color:brown;" href="http://www.nngroup.com/articles/show-price/">avoid listing the price</a> of products and
+                href="http://www.nngroup.com/articles/show-price/">avoid listing the price</a> of products and
                 services. No B2C ecommerce site would make this mistake, but it's rife in
-                <a style="color:brown;" href="https://www.nngroup.com/articles/b2b-usability/">B2B</a>, where most &quot;enterprise solutions&quot; 
+                <a href="https://www.nngroup.com/articles/b2b-usability/">B2B</a>, where most &quot;enterprise solutions&quot; 
                 are presented so that you can't tell whether they are suited for 100 people or
                 100,000 people. Price is the most specific piece of info customers use to
                 understand the nature of an offering, and not providing it makes people feel
                 lost and reduces their understanding of a product line. We have hours of video
                 of users asking <i>&quot;Where's the price?&quot;</i> while tearing
                 their hair out. Even B2C sites often make the associated mistake of forgetting prices in product
-                lists, such as <a style="color:brown;" href="http://www.nngroup.com/reports/ecommerce-ux-homepages-and-category-pages/">
-                category pages</a> or <a style="color:brown;" href="http://www.nngroup.com/reports/ecommerce-ux-search-including-faceted-search/">
+                lists, such as <a href="http://www.nngroup.com/reports/ecommerce-ux-homepages-and-category-pages/">
+                category pages</a> or <a href="http://www.nngroup.com/reports/ecommerce-ux-search-including-faceted-search/">
                 search results</span></a>. Knowing the price is key in both situations; it lets users differentiate 
                 among products and click through to the most relevant ones.</p>
                 </article>

@@ -1,0 +1,15 @@
+body {
+    height: 100%;
+    height: 100vh;
+}
+.box {
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 40vh;
+    height: 50px;
+    width: 50px;
+    background: rgba(85, 62, 62, 0.589);
+    padding: 25px;
+    color: white;
+    cursor: pointer;
+}

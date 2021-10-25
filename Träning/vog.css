@@ -1,25 +1,32 @@
 * {
     margin: 0;
-    padding: 5px;
+    padding: 0px;
+    box-sizing: border-box;
+    --outline: 1px dotted red;
 }
 body {
     position: relative;
     width: calc(100%-20px);
     height: 100vh;
 }
-div{
-    display: flex;
-    flex-direction: row;
-    background: rgba(128, 128, 128, 0.5);
-    margin: 5px;
-    padding: 5px;
-    height: 150px;
+header {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    font-size: 200%;
+    text-align: center;
+}
+img {
+    height: 2.5rem;
+    width: 200px;
 }
 nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: calc(100%-20px);
     background: rgb(179, 69, 69);
     color: white;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
@@ -34,4 +41,45 @@ nav a {
 nav a:hover{
     color: rgb(255, 255, 255);
     background: rgba(63, 10, 10, 0.418);
+}
+.main {
+    position: absolute;
+    text-align: center;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.466);
+    width: 100%;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header1 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    height: 500px;
+    width: 50%;
+    
+}
+.header2 {
+    position: flexible;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 50%;
+    height: 500px;
+    width: 50%;
+}
+.main div {
+    padding: 10px;
+    
+}
+.header1 div{
+    text-align: left;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header2 div {
+    text-align: left;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
 }

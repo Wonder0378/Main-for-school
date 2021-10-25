@@ -31,6 +31,8 @@ div {
 article {
     padding: 10px;
     border-radius: 20px;
+    animation: ease-in-out 4s 
+    
 }
 ul {
     padding-left: 20px;
@@ -64,4 +66,11 @@ h2, header {
 }
 a {
     text-decoration: none;
+    color:rgba(150, 10, 10, 0.74);
+}
+a:hover{
+    color:rgb(231, 94, 94);
+}
+article:hover{
+    background: rgba(255, 255, 255, 0.39);
 }

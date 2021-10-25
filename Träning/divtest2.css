@@ -1,0 +1,37 @@
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    --outline: 1px dotted red;
+}
+body {
+    position: absolute;
+    background: rgba(123, 123, 223, 0.342);
+    height: 100vh;
+    width: 100%;
+}
+.box1 {
+    position: relative;
+    margin-top: 0;
+    left: 25%;
+    right: 25%;
+    height: 50vh;
+    background: rgba(206, 89, 89, 0.432);
+}
+.box2{
+    position: relative;
+    margin-top: 0vh;
+    left: 37.5%;
+    right: 37.5%;
+    height: 25vh;
+    background-color: rgba(255, 255, 0, 0.486);
+}
+.box3{
+    position: relative;
+    margin-top: 0vh;
+    left: 43.75%;
+    right: 43.75%;
+    height: 12.5vh;
+    background-color: rgba(0, 255, 34, 0.486);
+}
