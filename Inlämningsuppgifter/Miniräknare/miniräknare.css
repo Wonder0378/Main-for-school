@@ -22,15 +22,15 @@ body {
     height: 300px;
 
 }
-#1 {
+#7 {
     grid-row: 1/2;
     grid-column: 1/2;
 }
-#2 {
+#8 {
     grid-row: 1/2;
     grid-column: 2/3;
 }
-#3 {
+#9 {
     grid-row: 1/2;
     grid-column: 3/4;
 }
@@ -46,15 +46,43 @@ body {
     grid-row: 2/3;
     grid-column: 3/4;
 }
-#7 {
+#1 {
     grid-row: 3/4;
-    grid-column: 1/4;
+    grid-column: 1/2;
 }
-#8 {
+#2 {
     grid-row: 3/4;
     grid-column: 2/3;
 }
-#9 {
+#3 {
     grid-row: 3/4;
     grid-column: 3/4;
+}
+#0 {
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+#clear {
+    grid-row: 1/2;
+    grid-column: 4/5;
+}
+#addition {
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+#subtraction {
+    grid-row: 3/4;
+    grid-column: 4/5;
+}
+#multiplication {
+    grid-row: 4/5;
+    grid-column: 3/4;
+}
+#division {
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+#calc {
+    grid-row: 4/5;
+    grid-column: 4/5;
 }
