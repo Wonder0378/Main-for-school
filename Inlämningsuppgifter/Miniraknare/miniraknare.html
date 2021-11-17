@@ -11,28 +11,30 @@
 <body>
     <div class="calculator">
         <div class="calcbody">
-            <div class="screen"></div>
+            <div class="screen">
+                <div id="screen"></div> 
+            </div>
             <div class="buttons">
-                <button id="7" type="button" >7</button>
-                <button id="8" type="button" >8</button>
-                <button id="9" type="button" >9</button>
-                <button id="clear" type="button" >Clear</button>
-                <button id="4" type="button" >4</button>
-                <button id="5" type="button" >5</button>            
-                <button id="6" type="button" >6</button>
-                <button id="addition" type="button" >+</button>          
-                <button id="1" type="button" >1</button>            
-                <button id="2" type="button" >2</button>
-                <button id="3" type="button" >3</button>            
-                <button id="subtraction" type="button" >-</button>
-                <button id="0" type="button" >0</button>
-                <button id="multiplication" type="button" >x</button>
-                <button id="division" type="button" >/</button>
-                <button id="calc" type="button" >Calculate</button>
+                <button id="7" onclick="button('7')" >7</button>
+                <button id="8" onclick="button('8')" >8</button>
+                <button id="9" onclick="button('9')" >9</button>
+                <button id="clear" onclick="button('clear')" >Clear</button>
+                <button id="4" onclick="button('4')" >4</button>
+                <button id="5" onclick="button('5')" >5</button>            
+                <button id="6" onclick="button('6')" >6</button>
+                <button id="addition" onClick="button('+')" >+</button>          
+                <button id="1" onclick="button('1')" >1</button>            
+                <button id="2" onclick="button('2')" >2</button>
+                <button id="3" onclick="button('3')" >3</button>            
+                <button id="subtraction" onclick="button('-')" >-</button>
+                <button id="0" onclick="button('0')" >0</button>
+                <button id="multiplication" onclick="button('*')" >x</button>
+                <button id="division" onclick="button('/')" >/</button>
+                <button id="calc" onclick="calc()" >Calculate</button>
             </div>
         </div>
     </div>
-<script src="miniraknare.js"></script>
 </body>
 <footer></footer>
+<script src="miniraknare.js"></script>
 </html>
