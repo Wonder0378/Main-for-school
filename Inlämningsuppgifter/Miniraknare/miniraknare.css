@@ -13,7 +13,7 @@ body {
     position: absolute;
     width: 330px;
     height: 480px;
-    background-color: grey;
+    background:linear-gradient(grey, rgb(107, 106, 106));
     outline: 1px solid rgb(0, 0, 0);
 }
 .calcbody {
@@ -31,8 +31,9 @@ body {
     height: 150px;
     left:0;
     top:0;
-    background: rgba(0, 255, 42, 0.11);
+    background: linear-gradient(rgba(16, 185, 16, 0.363), rgba(25, 107, 9, 0.274));
     outline: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
 }
 #screen {
     position: absolute;
@@ -47,13 +48,14 @@ body {
     display:grid;
     margin-top: 155px;
     gap: 5px;
-    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 300px;
     height: 300px;
 }
 .buttons button {
     outline: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
 }
 #7 {
     grid-row-start: 1;
@@ -120,4 +122,24 @@ body {
 #calc {
     grid-row: 4/5;
     grid-column: 4/5;
+}
+#paranthesis1{
+    grid-row: 5/6;
+    grid-column: 1/2;
+}
+#paranthesis2{
+    grid-row: 5/6;
+    grid-column: 2/3;
+}
+#dot{
+    grid-row: 5/6;
+    grid-column: 3/4;
+}
+#change{
+    grid-row: 5/6;
+    grid-column: 4/5;
+}
+
+.sidebody {
+
 }

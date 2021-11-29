@@ -1,5 +1,5 @@
 
-// Sets display constant
+// to shorten the screen display function
 var display = document.getElementById("screen");
 
 //Main function for input (numbers/operators)
