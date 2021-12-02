@@ -3,7 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="webtest1.css">
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        --outline: 1px dotted rgb(255, 251, 251);
+        }
+        body {
+            position: absolute;
+            background: rgb(159, 236, 200);
+            height: 100vh;
+            width: 100%;
+            z-index: 1;
+        }
+        header {
+            height: 100px;
+            width: 100%;
+        }
+        #bg {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: fit-content;
+            z-index: -10;
+        }
+        #Logo {
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            top: 10px;
+        }
+        .titlehead {
+            position:absolute;
+            height: 70px;
+            width: 100%;
+            font-size: 180%;
+            background: linear-gradient(to right, rgb(5, 83, 9), transparent)
+        }
+        .titlehead h1 {
+            position: absolute;
+            top: 0;
+            left: 60px;
+            width: calc(100%-60px);
+            z-index: 10;
+            color: white;
+        }
+        nav {
+            position: absolute;
+            height: 30px;
+            width: 100%;
+            top: 70px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background: green;
+            outline: white 2px solid;
+        }
+        nav a {
+            padding: 0 50px;
+            font-size: 150%;
+            text-decoration: none;
+            color: white;
+        }
+        .bg img {
+            z-index: -1;
+            position: absolute;
+            width: 100%;
+            height: fit-content;
+        }
+        .picturerow {
+            height: 250px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background: rgba(154, 235, 190, 0.425);
+            outline: white 2px solid;
+
+        }
+        .picturerow img {
+            height: 230px;
+            padding: 10px;
+            width:fit-content;
+        }
+        .textcolumns {
+            margin-top: 10px;
+            width: 95%;
+            margin-left: 2.5%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background: rgba(43, 80, 57, 0.308);
+            color: white;
+            border-radius: 20px;
+        }
+        .textcolumns div {
+            padding: 10px;
+            width: 400px;
+        }
+        .textcolumns img {
+            margin: 30px;
+            width: 300px;
+            height: fit-content;
+            border-radius: 30px;
+        }
+    </style>
 </head>
 <body>
     <header>
