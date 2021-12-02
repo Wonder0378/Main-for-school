@@ -31,29 +31,27 @@
                 <button id="multiplication" onclick="button('*')" >x</button>
                 <button id="division" onclick="button('/')" >/</button>
                 <button id="calc" onclick="calc()" class="funnypoo" >=</button>
-                <button id="paranthesis1">(</button>
-                <button id="paranthesis2">)</button>
-                <button id="dot">.</button>
-                <button id="change">+/-</button>
+                <button id="paranthesis1" onclick="button('(')">(</button>
+                <button id="paranthesis2" onclick="button(')')">)</button>
+                <button id="dot" onclick="button('.')">.</button>
+                <button id="del" onclick="del()">del</button>
             </div>
         </div>
-        <div class="sidebody">
-            <input type="checkbox" id="showmore">
-            <label for="showmore" id="btn">
-                <div id="click">></div>
-            </label>
-            <div class="morebuttons">
-                <button id="square">^</button>
-                <button id="squareroot">√</button>
-                <button id="log10">lg(10)</button>
-                <button id="derivate">der</button>
-                <button id="sin">sinv</button>
-                <button id="cos">cosv</button>
-                <button id="tan">tanv</button>
-                <button id="sint">^sinv</button>
-                <button id="cost">^cosv</button>
-                <button id="tant">^tanv</button>
-            </div>
+    </div>
+    <input type="checkbox" id="showmore">
+    <div id="btn">
+        <label for="showmore" id="click"></label>
+        <div class="sidebuttons">
+            <button id="square" onclick="button('**')">^</button>
+            <button id="squareroot" onclick="sqrt()">√</button>
+            <button id="log10" onclick="log()">lg(10)</button>
+            <button id="plusminus" onclick="plusminus()">+/-</button>
+            <button id="sin" onclick="trig('sin')">sin</button>
+            <button id="cos" onclick="trig('cos')">cos</button>
+            <button id="tan" onclick="trig('tan')">tan</button>
+            <button id="sint" onclick="trig('sint')">sin^-1</button>
+            <button id="cost" onclick="trig('cost')">cos^-1</button>
+            <button id="tant" onclick="trig('tant')">tan^-1</button>
         </div>
     </div>
 </body>
