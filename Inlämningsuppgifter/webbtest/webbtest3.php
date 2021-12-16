@@ -107,6 +107,27 @@
             text-align: center;
             font-size: 150%;
         }
+        nav {
+            position: absolute;
+            width: 20%;
+            height: 4%;
+            background: white;
+            font-size: 200%;
+            right: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 5%;
+            border-bottom-left-radius: 20px;
+        }
+        nav * {
+            margin-top: 1%;
+            text-decoration: none;
+            color: black;
+        }
+        nav *:hover {
+            color: green;
+        }
     </style>
 </head>
 <body>
@@ -136,6 +157,13 @@
     </div>
     <div class="rightbar">
         <img id="changingbg" src="https://www.greendeals.nl/themes/custom/dictu_greendeals/img/backgrounds/background-1.jpg" alt="">
+        
+        <nav>
+            <a href="">Home</a>
+            <a href="">Explore</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </nav>
 
         <div id="logotext">
             <h1>Nature</h1>
