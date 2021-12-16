@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    --outline: red 2px dotted;
+}
+body {
+    position: absolute;
+    width: 100%;
+    margin-top: 25vh;
+    background: rgb(196, 255, 226);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+body * {
+    margin-left: 25%;
+    width: 50%;
+    text-align: center;
+}
+form {
+    text-align: left;
+}
+.slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    margin-left: calc(-5% - 10px);
+    width: 110%;
+}
+.slider * {
+    margin: 0;
+}
+.slider output {
+    width: 20%;
+    outline: black 1px solid;
+    background: rgb(93, 231, 151);
+}
+.slider #range {
+    width: 60%;
+}
+.slider #datum {
+    width: 20%;
+    background: rgb(93, 231, 151);
+}
+#skicka {
+    margin-top: 5px;
+    color: rgb(0, 0, 0);
+    background: rgb(93, 231, 151);
+    height: 30px;
+    width: 70%;
+    margin-left: 15%;
+}
