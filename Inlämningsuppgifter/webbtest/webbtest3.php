@@ -50,10 +50,10 @@
             transition: ease-in-out 0.1s;
         }
         .articles div img {
-            width: 95%;
+            width: 90%;
             height: fit-content;
-            padding-left: 2.5%;
-            padding-right: 2.5%;
+            padding-left: 5%;
+            padding-right: 5%;
             padding-bottom: 2.5%;
             border-radius: 50px;
         }
@@ -99,13 +99,13 @@
             padding-top: 30px;
             width: 100%;
             text-align: center;
-            font-size: 200%;
+            font-size: 150%;
         }
         .article p {
             width: 100%;
             height: calc(90% - 30px);
             text-align: center;
-            font-size: 150%;
+            font-size: 100%;
         }
     </style>
 </head>
