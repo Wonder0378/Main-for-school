@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1 id='info'>Cool</h1>
 </body>
 <script src="gettournament.js"></script>
 </html>

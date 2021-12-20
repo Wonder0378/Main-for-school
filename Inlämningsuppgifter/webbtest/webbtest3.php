@@ -112,7 +112,7 @@
             width: 20%;
             height: 4%;
             background: white;
-            font-size: 200%;
+            font-size: 100%;
             right: 0;
             display: flex;
             flex-direction: row;
