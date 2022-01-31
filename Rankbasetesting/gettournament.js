@@ -1,15 +1,26 @@
+
+/*
 function wGet(myUrl) {
-    var www = new XMLHttpRequest(); // a new request with the help of an instance of the class XMLHttpRequest() which is builtin
+    var www = new XMLHttpRequest();
     
     www.open("GET", myUrl, false);
-    //we use 'GET' http command to get URL, the boolean setting parameter 'async' to false because we want synchronous data from the API
-    
-    www.send(null); //we want to respond but not send data.
-    return www.responseText; //responseText gets us the whole URL as our return.
+    www.send(null);
+
+    return www.responseText; 
   }
-  
 
+infobox = document.getElementById('fetcheddata');
 
-var url = 'https://api.sportsdata.io/v3/lol/scores/json/ActiveMemberships?key=2aeb06301d9f4544b2738238282de7dd';
+function newReq() {
+    let data = wGet('https://api.sportsdata.io/v3/lol/scores/json/Teams?key=2aeb06301d9f4544b2738238282de7dd');
 
-infobox = document.getElementById('info');
+    let myData = JSON.parse(data);
+
+    for(i=0; i<myData.lenght; i++) {
+      infobox.innerHTML += "<div id='data'>" +
+      myData[i].Name + 
+      "from" + myData[i].Areaname + 
+      "</div>"
+    };
+};
+*/

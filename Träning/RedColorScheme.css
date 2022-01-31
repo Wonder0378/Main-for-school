@@ -1,0 +1,11 @@
+    
+:root {
+    --rod: rgb(211, 43, 17);
+    --rodsec: rgba(224, 37, 8, 0.5);
+    --pool: rgb(253, 135, 0);
+    --poolsec: rgba(224, 109, 32, 0.5);
+    --rost: rgb(220, 250, 49);
+    --rostsec: rgba(255, 153, 37, 0.5);
+    --weirdversion: rgb(194, 53, 53);
+    --weirdversionsec: rgba(241, 53, 6, 0.664);
+}
