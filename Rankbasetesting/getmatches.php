@@ -87,9 +87,13 @@
                                     $Apoints = $pointreference * 1.2;
                                     $Bpoints = $pointreference * -1.2;
                                 }
-                                elseif($Aposition < $Bposition) {
+                                elseif($Bposition > $Aposition) {
                                     $Apoints = $pointreference * 0.8;
                                     $Bpoints = $pointreference * -0.8;
+                                }
+                                else{
+                                    $Apoints = $pointreference;
+                                    $Bpoints = $pointreference;
                                 };
                             }
                             else{
@@ -98,9 +102,13 @@
                                     $Bpoints = $pointreference * 1.2;
                                     $Apoints = $pointreference * -1.2;
                                 }
-                                elseif($Bposition < $Aposition) {
+                                elseif($Aposition > $Bposition) {
                                     $Bpoints = $pointreference * 0.8;
                                     $Apoints = $pointreference * -0.8;
+                                }
+                                else{
+                                    $Apoints = $pointreference;
+                                    $Bpoints = $pointreference;
                                 };
                             };
                             $queryMatchID = "INSERT 
@@ -111,8 +119,11 @@
                             $queryStandings = "SELECT * FROM standings";
                             $standingsResult = mysqli_query($conn, $queryStandings);
 
+                            echo "New Match";
+
                             while($row = mysqli_fetch_assoc($standingsResult)) {
                                 if($row["Team"] == $teamA) {
+                                    echo "teamA check!";
                                     $newpoints = $row["Points"] + $Apoints;
                                     $queryStandingsRemove = "DELETE FROM standings WHERE Team = '$teamA'";
                                     $removeStandings = mysqli_query($conn, $queryStandingsRemove);
@@ -123,6 +134,7 @@
                             };
                             while($row = mysqli_fetch_assoc($standingsResult)) {
                                 if($row["Team"] == $teamB) {
+                                    echo "TeamB check";
                                     $newpoints = $row["Points"] + $Bpoints;
                                     $queryStandingsRemove = "DELETE FROM standings WHERE Team = '$teamB'";
                                     $removeStandings = mysqli_query($conn, $queryStandingsRemove);

@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 1px dotted red;
+}
+.grid {
+    height: 560px;
+    width: 560px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(50% - 280px);
+    margin-top: 25px;
+    background: rgba(128, 128, 128, 0.185);
+    box-shadow: 0 2px 4px black;
+    color: rgba(128, 128, 128, 0.288);
+    transition: all 0.2s ease-in-out;
+}
+.grid div {
+    height: 70px;
+    width: 70px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 50%;
+}
+#score {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    margin-top: 5rem;
+    margin-left: calc(50% - 380px);
+    text-align: right;
+
+}

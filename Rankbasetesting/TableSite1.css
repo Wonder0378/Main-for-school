@@ -1,0 +1,200 @@
+
+
+/* General Things */
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
+
+:root {
+    --maincolor: rgb(167, 57, 57);
+    --lighterMain: rgb(235, 191, 191);
+    --darkerMain: rgb(146, 43, 43);
+    --evendarkerMain: rgb(82, 16, 16);
+    --black: rgb(0, 0, 0);
+
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    color: var(--lighterMain);
+    text-decoration: none;
+    font-family: 'Inconsolata', monospace;
+    --outline: 1px dotted red;
+}
+
+/* Header Things */
+header {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 30rem;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 5px solid white;
+    background: var(--black);
+}
+header .title {
+    margin-left: 0;
+    height: 15%;
+    width: 30%;
+    border-bottom: 5px solid white;
+    display: flex;
+    flex-direction: row;
+}
+header .title img {
+    height: 3.8rem;
+    width: fit-content;
+}
+header .title h1 {
+    margin-top: 0.5rem;
+    font-size: 250%;
+    color: white;
+}
+header #headnav {
+    margin-left: 0;
+    height: 15%;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: center;
+    border-bottom: 5px solid white;
+}
+header nav a {
+    font-size: 200%;
+    margin-top: 1rem;
+}
+#Bg {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    height: 85%;
+    z-index: 1;
+}
+#gallery {
+    position: absolute;
+    top: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background: rgba(109, 16, 16, 0.678);
+    height: 65%;
+    width: 200000px;
+    left: 0;
+    z-index: 2;
+    transition: ease-in-out 2s;
+}
+#gallery a {
+    margin-top: 1.5%;
+    height: 75%;
+    width: 20rem;
+    border-radius: 10px;
+}
+#gallery a img {
+    margin-top: 5%;
+    height: 90%;
+    width: 100%;
+}
+#gallery a:hover {
+    background: rgba(255, 255, 255, 0.116);
+}
+#left {
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    z-index: 2;
+}
+#right {
+    position: absolute;
+    top: 45%;
+    right: 20%;
+    z-index: 2;
+}
+#right img, #left img {
+    height: 5rem;
+    width: fit-content;
+}
+#right img {
+    transform: scaleX(-1);
+}
+.click:hover {
+    background: white;
+}
+/* Body things */
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+.betweenmenu {
+    height: 5rem;
+    width: 100%;
+    background: var(--black);
+}
+.betweenmenu nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 200%;
+    margin-top: 1rem;
+}
+.betweenmenu nav a {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+}
+.tables {
+    width: 100%;
+    height: 40rem;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    text-align: center;
+    background: linear-gradient(to bottom, var(--darkerMain), var(--evendarkerMain));
+    border-top: 5px solid white;
+}
+.tables .teamranking, .playerranking, .winnersOfTheWeek {
+    width: 20%;
+    height: 60%;
+    margin-top: 10%;
+    border: 5px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+h3 {
+    font-size: 200%;
+}
+#team {
+    border-top: 1px solid grey;
+}
+#team a {
+    font-size: 150%;
+}
+footer {
+    height: 4rem;
+    width: 100%;
+    background: var(--black);
+    border-top: 5px solid white;
+    display: flex;
+    justify-content: center;
+}
+footer nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 10%;
+    margin-right: 2%;
+    margin-top: 0.5rem;
+}
+nav a:hover {
+    color: white;
+}
