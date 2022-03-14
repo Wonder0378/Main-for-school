@@ -18,8 +18,8 @@
     $regions = array(
         "LEC"=>1.5,
         "LCK"=>1.8,
-        "LPL"=>2.0,
-        "NA LCS"=>1.0,
+        "LPL"=>-2.0,
+        "NA LCS"=>-1.0,
         "LMS"=>0.5,
         "LJL"=>0.5,
         "CBLOL"=>0.7,
@@ -54,11 +54,6 @@
                     while($row = mysqli_fetch_assoc($resultGameID)) {
                         $gameIDs[] = $row["GameID"];
                     };
-                    foreach($standings_decoded as $stand) {
-                        $tem = $stand["Name"];
-                        $standingscool = "INSERT INTO standings (Team, Points, Competition) VALUES ('$tem', 0, '$competitionname')";
-                        mysqli_query($conn, $standingscool);
-                    };
                     foreach($schedule_decoded as $match) {
                         if($match["IsClosed"] == true) {
 
@@ -92,8 +87,8 @@
                                     $Bpoints = $pointreference * -0.8;
                                 }
                                 else{
-                                    $Apoints = $pointreference;
-                                    $Bpoints = $pointreference;
+                                    $Apoints = $pointreference * 1;
+                                    $Bpoints = $pointreference * -1;
                                 };
                             }
                             else{
@@ -107,8 +102,8 @@
                                     $Apoints = $pointreference * -0.8;
                                 }
                                 else{
-                                    $Apoints = $pointreference;
-                                    $Bpoints = $pointreference;
+                                    $Apoints = $pointreference * -1;
+                                    $Bpoints = $pointreference * 1;
                                 };
                             };
                             $queryMatchID = "INSERT 
@@ -119,11 +114,8 @@
                             $queryStandings = "SELECT * FROM standings";
                             $standingsResult = mysqli_query($conn, $queryStandings);
 
-                            echo "New Match";
-
                             while($row = mysqli_fetch_assoc($standingsResult)) {
                                 if($row["Team"] == $teamA) {
-                                    echo "teamA check!";
                                     $newpoints = $row["Points"] + $Apoints;
                                     $queryStandingsRemove = "DELETE FROM standings WHERE Team = '$teamA'";
                                     $removeStandings = mysqli_query($conn, $queryStandingsRemove);
@@ -134,7 +126,6 @@
                             };
                             while($row = mysqli_fetch_assoc($standingsResult)) {
                                 if($row["Team"] == $teamB) {
-                                    echo "TeamB check";
                                     $newpoints = $row["Points"] + $Bpoints;
                                     $queryStandingsRemove = "DELETE FROM standings WHERE Team = '$teamB'";
                                     $removeStandings = mysqli_query($conn, $queryStandingsRemove);
